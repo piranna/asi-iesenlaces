@@ -1,0 +1,19 @@
+.caja {     
+    width: 482px;
+    background-image: url("centro.gif");
+    background-repeat: no-repeat;   
+}
+
+.cajaarriba {
+    background-image: url("arriba.gif");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.cajaabajo {
+    background-image: url("abajo.gif");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 30px 25px 30px 25px;
+}
+
