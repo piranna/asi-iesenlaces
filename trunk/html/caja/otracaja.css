@@ -1,0 +1,7 @@
+.bl {background: url(bl.gif) 0 100% no-repeat #e68200; width: 25em; margin-left: auto;
+    margin-right: auto;
+   }
+.br {background: url(br.gif) 100% 100% no-repeat}
+.tl {background: url(tl.gif) 0 0 no-repeat}
+.tr {background: url(tr.gif) 100% 0 no-repeat; padding:10px}
+.clear {font-size: 1px; height: 1px}

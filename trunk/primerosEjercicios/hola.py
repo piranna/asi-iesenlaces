@@ -1,0 +1,2 @@
+# $Author$
+print  "Hola, mundo"

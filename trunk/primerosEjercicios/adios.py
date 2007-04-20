@@ -1,0 +1,4 @@
+# $Id$
+# $Author$
+
+print "adios"

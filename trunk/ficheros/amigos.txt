@@ -1,0 +1,4 @@
+Profesor de programacion
+profesor de FOL
+profesor de redes
+profesor de sistemas

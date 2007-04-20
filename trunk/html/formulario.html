@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta content="text/html; charset=ISO-8859-1" />
+	<title>Pagina con formulario</title>
+	<link rel="stylesheet/css" href=""  />
+</head>
+<body>
+<h1>Formulario de entrada</h1>
+<form action="lo_que_se_va_a_ejecutar" >
+
+<fieldset>
+<legend>Formulario de entrada</legend>
+<label for="nombre">Nombre: </label>
+<input type="text" id="nombre" name="nombre"  accesskey="n"
+	size="40" maxlength="40" /> 
+
+<label for="apellido">Apellidos:</label>
+<input type="text" id="apellido" accesskey="a"/> 
+
+<label>Dirección:
+	<input type="text" accesskey="d"  value="No me cambias" readonly="readonly"/> 
+</label>
+
+<input type="submit" value="Enviar" />  
+<input type="reset" value="Borrar" />  
+</fieldset>
+<fieldset>
+<label>Contraseña:
+	<input type="password" />	
+	</label>
+<label>Carta a ...
+<textarea rows="10" cols="80"> </textarea>
+</label>
+</fieldset>
+<fieldset>
+<input type="checkbox"  checked="checked">Comida</input>
+<input type="checkbox">Cena</input>
+<input type="checkbox">Recena</input>
+</fieldset>
+<fieldset>
+<input type="radio"  name="comida" checked="checked">Comida</input>
+<input type="radio"  name="comida">Cena</input>
+<input type="radio"  name="comida" >Recena</input>
+</fieldset>
+<fieldset><legend>Lugar de procedencia</legend>
+<select size="10" multiple="multiple">
+	<optgroup label="Capitales">
+	<option>Zaragoza</option>
+	<option>Huesca</option>
+	<option>Teruel</option>
+	</optgroup>
+	<optgroup label="Cinco Villas">
+	<option>Ejea</option>
+	<option>TAuste</option>
+	<option>Biota</option>
+	</optgroup>
+	</select>
+	
+	</fieldset>
+<input type="hidden" name="invisible" value="nomevenadie" />
+</form>
+
+</body>
+</html>
