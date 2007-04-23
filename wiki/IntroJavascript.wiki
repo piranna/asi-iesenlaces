@@ -31,57 +31,44 @@ También hay unos tipos Indefinido y Null. Los Arrays son un tipo especial de ob
 
 === Números ===
 
-Numbers in JavaScript are "double-precision 64-bit format IEEE 754 values", according to the spec. This has some interesting consequences. There's no such thing as an integer in JavaScript, so you have to be a little careful with your arithmetic if you're used to maths in C or Java. Watch out for stuff like:
-
-0.1 + 0.2 = 0.30000000000000004
-
-The standard numeric operators are supported, including addition, subtraction, modulus (or remainder) arithmetic and so forth. There's also a built in object that I forgot to mention earlier called Math to handle more advanced mathematical functions and constants:
-
+Soporta los opereadores stándar. Hay un objeto (Math) que gestiona las operaciones avanzadas.
+{{{
+4 * 5 = 20;
 Math.sin(3.5);
 d = Math.PI * r * r;
-
-You can convert a string in to a number using the built-in parseInt() function. This takes the base for the conversion as an optional second argument, which you should always provide:
-
+}}}
+==== Conversiones ====
+{{{
 > parseInt("123")
 123
 > parseInt("010")
 8
-
-That happened because the parseInt function decided to treat the string as octal due to the leading 0. If you always provide the base you can avoid this problem entirely:
-
 > parseInt("123", 10)
 123
 > parseInt("010", 10)
 10
+}}}
 
-If you want to convert a binary number to an integer, just change the base:
 
-> parseInt("11", 2)
-3
-
-JavaScript also has a special value called Not-a-Number. This turns up when you do things like trying to convert a non-numeric string in to a number.
-
+JavaScript tiene también un valor especial llamado {{{Not-a-Number}}}
+{{{
 > parseInt("hello", 10)
 NaN
-
-NaN is toxic - if you provide it as an input to any mathematical operation the result will also be NaN:
-
 > NaN + 5
 NaN
-
-You can detect is using the built-in isNaN function:
-
 > isNaN(NaN)
 true
+}}}
 
-JavaScript also has special values for Infinity and negative Infinity:
-
+Valores de Intinito: 
+{{{
 > 1 / 0
 Infinity
 > -1 / 0
 -Infinity
+}}}
 
-Strings #
+=== Cadenas (Strings) ===
 
 Strings in JavaScript are sequences of characters. More accurately, they're sequences of unicode characters, with each character represented by a 16 bit number. This should be welcome news to anyone who has had to deal with internationalisation.
 
