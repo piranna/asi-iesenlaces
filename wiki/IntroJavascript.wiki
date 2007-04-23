@@ -120,7 +120,7 @@ hello world
 Se pueden usar para cadenas y números.
 
 == Estructuras de control ==
-
+{{{
 var name = "???";
 var numAlumnos ;
 if (curso == "asi") {
@@ -130,14 +130,15 @@ if (curso == "asi") {
 } else {
   numAlumnos = 30;
 }
+}}}
 
 {{{
-
 while (true) {
   // an infinite loop!
 }
 
 }}}
+
 {{{
 do {
   var input = get_input();
@@ -151,7 +152,9 @@ do {
 
 }}}
 
-{{{var allowed = (age > 18) ? "yes" : "no"; }}}
+{{{
+var allowed = (age > 18) ? "yes" : "no"; 
+}}}
 
 {{{
 switch(action) {
