@@ -80,7 +80,7 @@ h
 adiós, mundo
 > "hola".toUpperCase()
 HOLA
-
+}}}
 === Otros tipos ===
 
 {{{Null}}}  y {{{Undefined}}}.  
