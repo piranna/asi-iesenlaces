@@ -274,6 +274,7 @@ function avgArray(arr) {
 
 
 == Más Objetos == 
+
 {{{
 function makePerson(first, last) {
     return {
