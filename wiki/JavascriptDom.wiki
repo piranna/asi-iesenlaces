@@ -22,3 +22,9 @@ document.forms[0]
 document.datosPersonales
 document["datosPersonales"]
 }}}
+
+Para saber si un checkbox o radio está marcado, utiliza la propiedad booleana {{{checked}}}.
+
+== DOM 1 ==
+Representa el documento como un árbol de nodos. Los nodos son de tipo {{{Node}}} y hay varios subtipos: {{{Document}}}, {{{DocumentType}}}, {{{Element}}}, {{{Text}}}, {{{Comment}}}.
+API que permite el acceso y cambio del contenido de un documento.
