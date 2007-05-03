@@ -1,0 +1,12 @@
+#summary Eventos en Javascript
+
+= Eventos =
+
+Programación orientada a eventos. Los eventos son acciones que ocurren porque el usuario hace algo sobre un objeto (un clic, introducir texto, mover el ratón ...)
+
+Los eventos se capturan mediante los manejadores de eventos (handler). El proceso a realizar se programa mediante funciones JavaScript llamadas por los manejadores de eventos.
+
+Algunos eventos
+
+|| abort || onabort ||
+|| blur || onblur ||
