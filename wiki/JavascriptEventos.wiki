@@ -28,4 +28,4 @@ Los eventos se capturan mediante los manejadores de eventos (handler). El proces
  <form onreset="return confirm('¿Estás seguro?')" ...>
 }}}
 
- *Valor de retorno* : Puede anular el comportamiento por defecto de los eventos. Ejemplo: validar formularios {{{onsubmit}}}
+*Valor de retorno* : Puede anular el comportamiento por defecto de los eventos. Ejemplo: validar formularios {{{onsubmit}}}
