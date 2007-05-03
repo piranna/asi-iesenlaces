@@ -8,5 +8,17 @@ Los eventos se capturan mediante los manejadores de eventos (handler). El proces
 
 Algunos eventos
 
-|| abort || onabort ||
-|| blur || onblur ||
+||*evento* ||*manejador* || *Ocurre cuando ...*|| 
+|| abort || onabort || abortar la carga de una imagen || 
+|| blur || onblur ||cambiar el foco a otro elemento|| 
+||click || onclick || hacer click en algo|| 
+|| change|| onchange ||cambiar el valor de un elemento || 
+||error || onerror ||la carga de un bloque causa un error || 
+||focus || onfocus|| pasar el foco a otro elemento|| 
+|| load||onload ||el usuario carga la página || 
+||mouseout ||onmouseout || || 
+||mouseover ||onmouseover || || 
+||reset ||onreset || || 
+||select || onselect || || 
+||submit ||onsubmit || || 
+||unload || onunload|| || 
