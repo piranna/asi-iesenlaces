@@ -12,9 +12,13 @@
  * anchors (marcadores)
 
 Se puede acceder por posición o por nombre
+
 {{{ <form name="datosPersonales" ... > }}}
+
 Javascript: 
-{{{document.forms[0]
+
+{{{
+document.forms[0]
 document.datosPersonales
 document["datosPersonales"]
 }}}
