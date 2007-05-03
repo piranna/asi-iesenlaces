@@ -1,0 +1,20 @@
+#summary Javascript DOM
+
+= DOM (Document Object Model) =
+
+ * API orientado a objetos que permite interactuar con el documento html / xhtml
+ * Niveles: 0 (feneración anterior de navegadores), 1 (contenido dinámico) y 2 (estilos dinámicos y eventos avanzados)
+
+== Acceso a algunos elementos ==
+ * forms (formularios)
+ * images (imágenes)
+ * links (enlaces)
+ * anchors (marcadores)
+
+Se puede acceder por posición o por nombre
+{{{ <form name="datosPersonales" ... > }}}
+Javascript: 
+{{{document.forms[0]
+document.datosPersonales
+document["datosPersonales"]
+}}}
