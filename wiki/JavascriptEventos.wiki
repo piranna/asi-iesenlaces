@@ -6,7 +6,7 @@ Programación orientada a eventos. Los eventos son acciones que ocurren porque e
 
 Los eventos se capturan mediante los manejadores de eventos (handler). El proceso a realizar se programa mediante funciones JavaScript llamadas por los manejadores de eventos.
 
-Algunos eventos
+== Algunos eventos ==
 
 || *evento* || *manejador* || *Ocurre cuando ...* || 
 || abort || onabort || abortar la carga de una imagen || 
@@ -22,3 +22,8 @@ Algunos eventos
 ||select || onselect || || 
 ||submit ||onsubmit || || 
 ||unload || onunload|| El usuario sale de la página || 
+
+== Definir manejador ==
+{{{
+ <form onreset="return confirm('¿Estás seguro?')" ...>
+}}}
