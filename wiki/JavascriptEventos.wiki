@@ -33,6 +33,6 @@ Los eventos se capturan mediante los manejadores de eventos (handler). El proces
 == Validando Formularios == 
 
 Ver ejemplos: 
-* http://www.webtaller.com/construccion/lenguajes/javascript/lecciones/validar_formularios_en_javascript.php
-* http://www.desarrolloweb.com/articulos/1767.php
-* http://www.tierradenomadas.com/rc011.phtml
+ * http://www.webtaller.com/construccion/lenguajes/javascript/lecciones/validar_formularios_en_javascript.php
+ * http://www.desarrolloweb.com/articulos/1767.php
+ * http://www.tierradenomadas.com/rc011.phtml
