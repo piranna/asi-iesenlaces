@@ -1,0 +1,11 @@
+#summary Introducción librería mochikit
+
+= Introducción al uso de MochiKit =
+
+MochiKit (www.mochikit.com) es una librería javascrip escrita al estilo Python. Tiene herramientas para gestionar AJAX, DOM, programación funciona, fechas, formato de cadenas, colores, efectos visuales, eventos, y muchas otras prestaciones. MochiKit 1.3 funciona con  Safari 2.0.2, Firefox (1.0.7, 1.5 y 2.0), Opera 8.5 e Internet Explorer (6 y 7). La documentación es abundante y tiene una batería de tests muy completa.
+
+
+== Descarga e instalación ==
+Instrucciones de descarga en http://mochikit.com/download.html
+
+Se puede descargar la última versión estable (http://mochikit.com/dist/MochiKit-1.3.1.zip) o la versión en desarrollo ({{{svn co http://svn.mochikit.com/mochikit/trunk mochikit}}})
