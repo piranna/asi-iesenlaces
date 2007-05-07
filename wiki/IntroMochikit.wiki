@@ -13,3 +13,12 @@ Se puede descargar la última versión estable (http://mochikit.com/dist/MochiKi
 {{{
 svn co http://svn.mochikit.com/mochikit/trunk mochikit
 }}}
+Se copiará en un directorio accesible desde el servidor web que estemos utilizando (o en un directorio local si no se accede por {{{http}}})
+
+== Uso ==
+Para usar la librería se incluirá una etiqueta script que acceda al archivo MochiKit.js, además del que acceda a las funciones que estemos programando nosotros.
+{{{
+<script type="text/javascript" src="../MochiKit/MochiKit.js" />
+<script type="text/javascript" src="misfunciones.js" />
+}}}
+*Importante*: hay que poner bien la ruta de donde hemos descargado la librería y las mayúsculas: *M*ochi*K*it.
