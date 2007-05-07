@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Uso de MochiKit
+  Efectos visuales: esquinas redondeadas.
+
+  Pasos:
+  1. Marcar en el html clases o ids que se quieran marcar con esquinas
+     redondeadas.
+  2. En el javascript: 
+        * crear función que enlaza los elementos usando las funciones 
+          roundClass y roundElement.
+        * llamar a esa función con addLoadEvent para que se active al cargar la página.
+  3. Poner el background correspondiente en el css.
+
+-->
+
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en">
+  <head>
+    <title>Introducción a Mochikit</title>
+    <meta content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="redondeado.css" />
+    <script type="text/javascript" src="../MochiKit/MochiKit.js" />
+    <script type="text/javascript" src="redondeado.js" />
+  </head>
+  <body>
+    <h1>Uso de esquinas redondeadas</h1>
+    <h2>Esquinas no redondeadas</h2>
+    <h2 class="redondo">Esquinas redondeadas</h2>
+    <p id="idredondo">Este parrafo también estará redondeado</p>
+    <p> este no estará redondeado</p>
+  </body>
+</html>

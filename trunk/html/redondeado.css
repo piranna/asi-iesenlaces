@@ -1,0 +1,18 @@
+h1 {
+	background: pink;
+	padding-top: 1em;
+	width: 90%;
+	color: blue;
+	}
+	
+h2 {
+	background: purple;
+	padding-top: 2em;
+	width: 80%;
+	color: white;
+	}
+	
+#idredondo {
+	background: grey;
+	color: white;
+	}
