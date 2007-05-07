@@ -16,7 +16,7 @@ Con Mochikit es fácil crear efectos visuales, por ejemplo fondos con esquinas r
 
 
 == Funciones == 
- * {{{roundClass(etiqueta[, clase[, opciones]])}}.  Redondea todos los elementos que coinciden con la etiqueta y clase. Etiqueta y clase pueden ser nulos y seleccionan a todos.
+ * {{{roundClass(etiqueta[, clase[, opciones]])}}}.  Redondea todos los elementos que coinciden con la etiqueta y clase. Etiqueta y clase pueden ser nulos y seleccionan a todos.
  * {{{roundElement(elementoId[, opciones])}}}. Redondea los elementos con el id indicado.
 
 === Opciones por defecto ===
@@ -38,6 +38,5 @@ En *corners* podemos especificar:
   * bl (abajo izquierda)
   * tr (arriba derecah)
   * br (abajo derecha)
-
 
 
