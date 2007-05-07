@@ -32,3 +32,4 @@ Para usar la librería se incluirá una etiqueta script que acceda al archivo Mo
 
 == Ejemplos == 
  * EsquinasRedondeadasConMochikit
+ * [Introducción al DOM con MochiKit MochikitDom]
