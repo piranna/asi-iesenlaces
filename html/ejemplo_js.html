@@ -1,74 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html>
-<head>
-	<title>Ejemplos de javascript</title>
-	<noscript>
-		<h2>Este navegador no acepta Javascript</h2><p>Vaya a <a href="xxxxxxx">esta página</a></p>
-	</noscript>
-	<script type="text/javascript" >
-		// aquí ponemos las líneas de código 
-		// en el encabezado van las funciones
-		
-	</script>
-</head>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Ejemplos de javascript</title>
+    <script type="text/javascript" >
+      // aquí ponemos las líneas de código 
+      // en el encabezado van las funciones
+      
+    </script>
+  </head>
 
 <body>
-	<script type="text/javascript" >
-		var nombre;  // creo una variable
-		var edad = 24;  // creo una variable y la inicializo
-		curso = "A.S.I.";  // creo la variable al inicializarla
-		nombre = "Pepe";
-		document.write("<p>El alumno " + nombre +" tiene "+ edad 
-				+ " años y estudia " + curso + "</p>");
-		//document.write(variable + "que no existe");
-		// condicionales
-		if (edad > 17)
-			document.write("<p>Eres mayor de edad</p>");
-		x = 1;
-		document.write('<ul>')
-		while (x < 11) {
-			document.write("<li>"+x+"</li>");
-			x += 1;
-			}
-		document.write("</ul>");
-		for (var x =0; x <11; x++)
-			document.write(" "+x);
-		res = ""
-		for (p in navigator)
-			res += p + "->" + navigator[p] + '\n';
-		alert(res);
-		
-		// funciones
-		function suma(arg1, arg2){
-			var resultado = arg1 + arg2;
-			return resultado;
-		}
-		
-		alert("la suma de 3 y 5 es " + suma(3,5));
-		
-		// Objetos
-		var Homer;
-		Homer = new Object();
-		Homer.nombre = "Homer Simpson";
-		Homer.edad = 36;
-		Homer.casado = true;
-		
-		alert(Homer["nombre"] +" tiene " + Homer.edad + " años.\n ");
-		
-		// Vectores
-		var alumnos = new Array();
-		alumnos[0] = "Jesus";
-		document.write("<br />Introduzco un alumno: "+ alumnos[0] + " (" + alumnos.length + ")");
-		alumnos[100] = "Ana";
-		document.write("<br />Introduzco un alumno: "+ alumnos[100] + " (" + alumnos.length + ")");
-			
-	</script>
+  <!-- por si el navegador no soporta js -->
+  <noscript>
+    <h2>Este navegador no acepta Javascript</h2><p>Vaya a <a href="pagina.de.destino.com">esta página</a></p>
+  </noscript>
+  <script type="text/javascript" >
+    //<![CDATA[  
+    // Incluimos el código dentro de un CDATA para que sea xhtml válido
+    // comentamos CDATA para que no dé problemas en algunos navegadores que no soporta CDATA
+    // creación de variables: declarándolas o sin declararlas.
+    var nombre;  // creo una variable
+    var edad = 24;  // creo una variable y la inicializo
+    curso = "A.S.I.";  // creo la variable al inicializarla
+    nombre = "Pepe";
 
+    // document es un objeto predefinido: representa al documento que vemos en pantalla.
+    document.write("<p>El alumno " + nombre +" tiene " 
+                  + edad  + " años y estudia " + curso + "</p>");
+		  
+    //document.write(variable + "que no existe");
 
+    // condicionales
+    if (edad > 17)
+    document.write("<p>Eres mayor de edad</p>");
+
+    // while
+    x = 1;
+    document.write('<ul>')
+    while (x < 11) {
+    document.write("<li>"+x+"</li>");
+    x += 1;
+    }
+    document.write("</ul>");
+
+    // for como en c
+    for (var x =0; x <11; x++)
+        document.write(" "+x);
+
+    // for como en python
+    res = "";
+    for (p in navigator)
+	res += p + "->" + navigator[p] + '\n';
+
+    alert(res);
+
+    // funciones
+    function suma(arg1, arg2){
+	var resultado = arg1 + arg2;
+	return resultado;
+	}
+		
+    alert("la suma de 3 y 5 es " + suma(3,5));
+		
+    // Objetos
+    var Homer;
+    Homer = new Object();
+    Homer.nombre = "Homer Simpson";
+    Homer.edad = 36;
+    Homer.casado = true;
+    
+    alert(Homer["nombre"] +" tiene " + Homer.edad + " años.\n ");
+    
+    // Vectores
+    var alumnos = new Array();
+    alumnos[0] = "Jesus";
+    document.write("<br />Introduzco un alumno: "+ alumnos[0] + " (" + alumnos.length + ")");
+    // no comprueba qué si está lleno
+    alumnos[100] = "Ana";
+    document.write("<br />Introduzco un alumno: "+ alumnos[100] + " (" + alumnos.length + ")");
+    
+    //]]>
+  </script>
 </body>
-
 </html>
 
 

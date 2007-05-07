@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ejercicio para capturar eventos en un documento html
+  
+  Validación de formularios con javascript: capturamos el evento y si hay
+  un error, la función devuelve false para que no siga la acción del submit.
+
+  Si se pulsa la acción del reset, se pide confirmación.
+-->
+
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xml:lang="en" lang="en">
+<head>
+  <title>Eventos en javascript</title>
+  <script type="text/javascript" src="fundamentos.js"  />
+</head>
+
+<body>
+  <h1>Ejemplos de eventos con javascript</h1>
+  <form onreset="borrar()" onsubmit="return validar(this)" action="mailto:yo@mail.com">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre"/>
+      <input type="submit" name="Enviar" value="Enviar"/>
+      <input type="reset" name="Borrar" value="Borrar" />
+    </fieldset>
+  </form>
+  <a href="#" onclick="aviso()">Enlace que captura el evento onclick</a>	
+  <a href="#" onclick="propiedades()">Propiedades del documento</a>
+  <a href="#" onclick="colorFondo('red')">Rojo</a>	
+</body>
+</html>
+
+
+
+
+
+
+
+
