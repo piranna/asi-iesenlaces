@@ -26,7 +26,9 @@ Para usar la librería se incluirá una etiqueta script que acceda al archivo Mo
 == Documentación ==
  * http://mochikit.com/doc/html/MochiKit/index.html
  * http://svn.mochikit.com/presentations/2006/ajax_experience/slides.html
- * Recopilación de frameworks: http://www.gloo.ru/c/Survey-of-AJAX-JavaScript-Libraries/es.html.aspx
+ * Recopilación de frameworks: 
+    * http://www.gloo.ru/c/Survey-of-AJAX-JavaScript-Libraries/es.html.aspx
+    * http://www.sitepoint.com/article/javascript-library
 
 == Ejemplos == 
  * EsquinasRedondeadasConMochikit
