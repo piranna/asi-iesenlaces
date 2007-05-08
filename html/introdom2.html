@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ejemplo que añade elementos <input type="text" .. />  a un formulario
+  de forma dinámica
+
+-->
+
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en">
+  <head>
+    <title>Introducción a Mochikit</title>
+    <meta content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="introdom.css" />
+    <script type="text/javascript" src="../MochiKit/MochiKit.js" />
+    <script type="text/javascript" src="introdom2.js" />
+  </head>
+  <body>
+    <h1>Ejemplo de intro de DOM</h1>
+    <form method="get" action="#">
+      <fieldset>
+	<legend>Teléfonos</legend>
+	<div id="telefonos" />
+	<br />
+      </fieldset>
+      <input type="button" value="+" onclick="otroTel()"/>
+    </form>
+    <hr />
+  </body>
+</html>
