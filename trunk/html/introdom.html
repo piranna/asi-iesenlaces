@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  -->
+
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en">
+  <head>
+    <title>Introducción a Mochikit</title>
+    <meta content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="introdom.css" />
+    <script type="text/javascript" src="../MochiKit/MochiKit.js" />
+    <script type="text/javascript" src="introdom.js" />
+  </head>
+  <body>
+    <h1>Introducción al uso de DOM</h1>
+    <br />
+	<div id="mensaje"><p /></div>
+	<br />
+	<a href="#" onclick="muestraMensaje('El día está soleado')">Mostrar mensaje</a> ::
+	<a href="#" onclick="borraMensaje()">Borra mensaje</a>  
+	<br />
+	<a href="#" onclick="mensajeTemporal()">Muestra el mensaje 2 segundos</a>
+	<hr />
+	<form method="get" action="muestraDNI()">
+	  <fieldset>
+	    <legend>Datos Personales</legend>
+	    <label for="dni">DNI</label>
+	    <input type="text" id="dni" />
+	    <p>Introduzca su DNI (sólo números)</p>
+	    <br />
+	  <input type="button" value="Aceptar" onclick="validaDNI()" />
+	  </fieldset>
+	</form>
+  </body>
+</html>
+
+
+
+
