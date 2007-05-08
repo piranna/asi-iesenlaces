@@ -37,7 +37,7 @@
 	background: yellow;
 	}
 }}}
-== introdom.js
+== introdom.js ==
 {{{
 function muestraMensaje(){
 	antiguo = getElement('mensaje');
