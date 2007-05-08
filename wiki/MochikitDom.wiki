@@ -6,6 +6,7 @@ Mochikit tiene herramientas que simplifican mucho el trabajo con DOM
 
 *Documentacion*: http://mochikit.com/doc/html/MochiKit/DOM.html
 
+*Ejemplo*
 {{{
 var rows = [
     ["dataA1", "dataA2", "dataA3"],
@@ -25,6 +26,7 @@ var newTable = TABLE({'class': 'prettytable'},
 swapDOM(oldTable, newTable);
 }}}
 
+*Algunas funciones*
 {{{
 createDOM(nombre[, atributos[, nodo[, ...]]])
 
