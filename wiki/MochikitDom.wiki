@@ -28,6 +28,8 @@ swapDOM(oldTable, newTable);
 
 *Algunas funciones*
 {{{
+getElement(id)
+
 createDOM(nombre[, atributos[, nodo[, ...]]])
 
 appendChildNodes(node[, childNode[, ...]])
@@ -36,3 +38,4 @@ removeElement(node)
 
 swapDOM(dest, src)
 }}}
+
