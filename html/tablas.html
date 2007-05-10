@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     lang="es">
+    <head>
+        <title>Tablas que se pueden ordenar</title>
+        <link href="tablas.css" rel="stylesheet" type="text/css" />
+	<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+        <script type="text/javascript" src="../MochiKit/MochiKit.js"></script>
+        <script type="text/javascript" src="tablas.js"></script>
+    </head>
+    <body>
+        <h1>
+            Ejemplo de tablas que se pueden ordenar
+        </h1>
+        <p>
+	El cliente puede ordenar las tablas por todas sus columnas.            
+        </p>
+        <table id="sortable_table" class="datagrid" 
+	       xmlns:mochi="http://mochikit.com/tables" >
+            <thead>
+                <tr>
+                    <th mochi:format="str">Alumno</th>
+                    <th mochi:format="str">Curso</th>
+                    <th mochi:format="fecha">Fecha Nac</th>
+                    <th mochi:format="numero">Nota</th>
+                </tr>
+            </thead>
+            <tfoot class="invisible">
+                <tr>
+                    <td colspan="0"></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Andres García</td>
+                    <td>ASI</td>
+                    <td>10-02-1988</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Pilar Maslista</td>
+                    <td>ASI</td>
+                    <td>10-04-1988</td>
+                    <td>8</td>
+		</tr>
+		<tr>
+		  <td>Jesús Paz</td>
+		  <td>ESI</td>
+		  <td>17-04-1990</td>
+		  <td>4</td>
+		</tr>
+		<tr>
+		  <td>David Estudioso</td>
+                    <td>ESI</td>
+                    <td>01-12-1990</td>
+		    <td>6</td>
+		</tr>
+		<tr>
+		  <td>Carla Mena</td>
+                    <td>ESI</td>
+                    <td>21-10-1990</td>
+		    <td>8</td>
+		</tr>
+		<tr>
+		  <td>Pilar Alvarez</td>
+                    <td>ESI</td>
+                    <td>11-01-1990</td>
+		    <td>3</td>
+		</tr>
+		<tr>
+		  <td>Ana Ramos</td>
+                    <td>ESI</td>
+                    <td>01-01-1991</td>
+		    <td>9</td>
+		</tr>
+            </tbody>
+        </table>
+    </body>
+</html>
