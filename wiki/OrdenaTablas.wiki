@@ -1,0 +1,25 @@
+#summary Tablas que se ordenan con mochikit
+
+= Ordenar tablas =
+
+En las demos de mochikit hay un ejemplo de ordenar tablas (http://mochikit.com/examples/sortable_tables/index.html) Vamos a ver cómo podemos utilizar el fuente javascript que usan para crear nuestras propias tablas (http://mochikit.com/examples/sortable_tables/sortable_tables.js)
+
+No vamos a reinventar la rueda y vamos a utilizar un código que ya funciona, adaptándolo a nuestras necesidades.
+
+== ¿Cómo funciona el programa? ==
+
+Básicamente *cuando se carga la página* el {{{SortableManager}}}:
+
+ - Busca la tabla por su id: tablaordenable.
+ - Analiza sus thead con atributos "mochi:formato" 
+ - Analiza los datos fuera del tbody basándose en la información obtenida y clona los elementos tr para usarlos más tarde.
+ - Clona los th de las columnas
+ - Almacena una referencia al tbody, que se reemplazará en cada ordenación
+ - Realiza la primera ordenación.
+
+*Cuando se pide una ordenación*:
+
+- Ordena los datos basándose en la clave y dirección
+- Crea un nuevo tbody con las filas de la nueva ordenación
+- Reemplaza el encabezado los encabezados con versiones cliclables, añadiendo
+  un indicador a la última columna ordenada
