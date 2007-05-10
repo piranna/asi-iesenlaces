@@ -10,16 +10,15 @@ No vamos a reinventar la rueda y vamos a utilizar un código que ya funciona, ad
 
 Básicamente *cuando se carga la página* el {{{SortableManager}}}:
 
- - Busca la tabla por su id: tablaordenable.
- - Analiza sus thead con atributos "mochi:formato" 
- - Analiza los datos fuera del tbody basándose en la información obtenida y clona los elementos tr para usarlos más tarde.
- - Clona los th de las columnas
- - Almacena una referencia al tbody, que se reemplazará en cada ordenación
- - Realiza la primera ordenación.
+ * Busca la tabla por su id: tablaordenable.
+ * Analiza sus thead con atributos "mochi:formato" 
+ * Analiza los datos fuera del tbody basándose en la información obtenida y clona los elementos tr para usarlos más tarde.
+ * Clona los th de las columnas
+ * Almacena una referencia al tbody, que se reemplazará en cada ordenación
+ * Realiza la primera ordenación.
 
 *Cuando se pide una ordenación*:
 
-- Ordena los datos basándose en la clave y dirección
-- Crea un nuevo tbody con las filas de la nueva ordenación
-- Reemplaza el encabezado los encabezados con versiones cliclables, añadiendo
-  un indicador a la última columna ordenada
+ * Ordena los datos basándose en la clave y dirección
+ * Crea un nuevo tbody con las filas de la nueva ordenación
+ * Reemplaza el encabezado los encabezados con versiones cliclables, añadiendo un indicador a la última columna ordenada
