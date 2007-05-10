@@ -59,3 +59,8 @@ Básicamente *cuando se carga la página* el {{{SortableManager}}}:
 }}}
 
 *convierteFecha* es una función que hemos creado nostros para que tome la fecha de forma correcta.
+
+== Fuentes del ejemplo ==
+ * http://asi-iesenlaces.googlecode.com/svn/trunk/html/tablas.html
+ * http://asi-iesenlaces.googlecode.com/svn/trunk/html/tablas.css
+ * http://asi-iesenlaces.googlecode.com/svn/trunk/html/tablas.js
