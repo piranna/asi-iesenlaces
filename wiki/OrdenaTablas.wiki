@@ -33,7 +33,7 @@ Básicamente *cuando se carga la página* el {{{SortableManager}}}:
 <th mochi:format="fecha">Fecha Nac</th>
 <th mochi:format="numero">Nota</th>
 }}}
- * En el archivo .js tendremos que añadir las funciones apropiadas a {{{SortableManager}}}, en nuestro caso quedará así:
+ * En el archivo .js tendremos que añadir a {{{SortableManager}}} las funciones apropiadas para que javascript sepa qué tipo de dato tiene que ordenar, ya que en el html todo es texto. En nuestro caso quedará así:
 {{{
              switch (this.columns[j].format) {
                     case 'isodate':
@@ -57,3 +57,5 @@ Básicamente *cuando se carga la página* el {{{SortableManager}}}:
                 }
 
 }}}
+
+*convierteFecha* es una función que hemos creado nostros para que tome la fecha de forma correcta.
