@@ -22,3 +22,38 @@ Básicamente *cuando se carga la página* el {{{SortableManager}}}:
  * Ordena los datos basándose en la clave y dirección
  * Crea un nuevo tbody con las filas de la nueva ordenación
  * Reemplaza el encabezado los encabezados con versiones cliclables, añadiendo un indicador a la última columna ordenada
+
+== ¿Cómo hacer que se pueda ordenar una tabla en nuestro .html? ==
+ * Incluir el programa .js que ordena las tablas (genérico). Nosotros lo hemos llamado tablas.js
+ * En el html añadir a la tabla que queremos ordenar el atributo {{{id="sortable_table}}}.
+ * Los {{{th}}} del {{{thead}}} de la tabla deberán indicar el tipo de dato que contiene cada columna para aplicarle la función de ordenación apropiada. Lo haremos con un atributo (no esándard) {{{mochi:format="valor"}}}. En nuestro ejemplo:
+{{{
+<th mochi:format="str">Alumno</th>
+<th mochi:format="str">Curso</th>
+<th mochi:format="fecha">Fecha Nac</th>
+<th mochi:format="numero">Nota</th>
+}}}
+ * En el archivo .js tendremos que añadir las funciones apropiadas a {{{SortableManager}}}, en nuestro caso quedará así:
+{{{
+             switch (this.columns[j].format) {
+                    case 'isodate':
+                        obj = isoDate(obj);
+                        break;
+                    case 'str':
+                        break;
+                    case 'istr':
+                        obj = obj.toLowerCase();
+                        break;
+                    // cases for numbers, etc. could be here
+		    // añadimos funciones para nuestras columnas
+		    case 'numero':
+			obj = eval(obj);
+			break;
+		    case 'fecha':
+			obj = convierteFecha(obj);
+			break;
+                    default:
+                        break;
+                }
+
+}}}
