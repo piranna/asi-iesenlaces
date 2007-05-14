@@ -5,6 +5,8 @@ Con los métodos de CherryPy se sirven documentos dinámicos. Si necesitamos ser
 
 {{{
 conf = { '/': {'tools.saticfile.root': directorio_actual},
-         '/css/style.css': {tools.staticfile.on': True, tools.staticfile.filename': 'nombre_css.css'}
-        }
+         '/css/style.css': {tools.staticfile.on': True, 
+                            tools.staticfile.filename': 'nombre_css.css'
+                           }
+       }
 }}}
