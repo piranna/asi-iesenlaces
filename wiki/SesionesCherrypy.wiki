@@ -8,7 +8,7 @@ Hay que activar el uso de sesiones con : {{{_cp_config = {'tools.sessions.on': T
 
 Ejemplo: contador
 {{{
-#python
+#!python
 # -*- coding: utf-8 -*-
 
 import cherrypy
