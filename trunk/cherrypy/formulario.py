@@ -1,8 +1,24 @@
 # -*- coding: utf-8 -*-
 
 # Cadenas HTML
+# La página final se compondrá de encabezado + formulario + pie
 
-formulario = """
+_encabezado = """
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en">
+  <head>
+    <title>Introducción a CherryPy</title>
+    <meta content="text/html; charset=utf-8" />
+  </head>
+  <body>
+"""
+# fin de encabezado
+
+
+_formulario = """
 <form action="login" method="post">
     <p>Usuario</p>
     <input type="text" name="usuario" value="" 
@@ -15,24 +31,31 @@ formulario = """
 </form>
 <p><pre>cherrypy/cherrypy</pre> si quieres tener éxito</p>
 """
+# fin de formulario
 
-acierto = """<h1 style="color:blue">OK</h1>"""
 
-error = """<h1 style="color:red">ERROR</h1><p><a href="/">Volver al formulario</a>"""
+_pie = """</body></html>"""
+
+
+_acierto = """<h1 style="color:blue">OK</h1>"""
+
+_error = """<h1 style="color:red">ERROR</h1><p><a href="/">Volver al formulario</a>"""
+
+
 
 import cherrypy
 
 
 class Root(object):
     def index(self):
-        return formulario
+        return _encabezado + _formulario + _pie
     index.exposed = True
     def login(self, usuario, password):
         """ Comprueba los permisos del ususario"""
         if usuario=='cherrypy' and password=='cherrypy':
-            return acierto
+            return _encabezado + _acierto + _pie
         else:
-            return error
+            return _encabezado + _error + _pie
     login.exposed = True
     
 cherrypy.quickstart(Root())
