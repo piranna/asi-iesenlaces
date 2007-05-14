@@ -25,3 +25,27 @@ $ python holaMundo.py
 CherryPy Checker:
 The Application mounted at '' has an empty config.
 }}}
+
+El servidor web traducirá la dirección a peticiones de objetos. Veamos un caso más complejo. Podremos acceder a {{{ /, /despedida y /pregunta}}}:
+{{{
+# -*- coding: utf-8 -*-
+
+import cherrypy
+
+class Despedida(object):
+    def index(self):
+        return "¡¡¡Hasta luego!!!"
+    index.exposed = True
+
+class HolaMundo(object):
+    despedida = Despedida()
+    def index(self):
+        return "¡Hola, mundo!"
+    index.exposed = True  # hace accesible el métido. Si no, no podríamos acceder a él.
+    def pregunta(self):
+        return("¿Cómo estás?")
+    pregunta.exposed=True
+
+# publica la clase HolaMundo
+cherrypy.quickstart(HolaMundo())
+}}}
