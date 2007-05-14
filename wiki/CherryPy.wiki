@@ -49,3 +49,6 @@ class HolaMundo(object):
 # publica la clase HolaMundo
 cherrypy.quickstart(HolaMundo())
 }}}
+
+== Más ==
+ * [CherrypyEstatico Contenido estático]
