@@ -4,7 +4,7 @@
 Cherrypy (http://www.cherrypy.org/) es una librería para desarrollar aplicaciones web con python, que no exige un conocimiento del protocolo http. Las aplicaciones web se desarrollan como el resto de programas orientados a objetos con python.
 
 == Hola, mundo == 
-
+Escribimos nuestro primer programa: una clase con un método index.html. Ese método tiene que ser accesible (*exposed*):
 {{{
 # -*- coding: utf-8 -*-
 
@@ -18,7 +18,7 @@ class HolaMundo:
     
 cherrypy.quickstart(HolaMundo())
 }}}
-
+Ejecutamos la aplicación. Vemos que por defecto sirve en el puerto 8080, al que dirigiremos nuestro navegador con {{{http://localhost:8080}}}:
 {{{
 $ python holaMundo.py
 [14/May/2007:14:13:40] HTTP Serving HTTP on http://0.0.0.0:8080/
