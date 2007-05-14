@@ -52,3 +52,4 @@ cherrypy.quickstart(HolaMundo())
 
 == Más ==
  * [CherrypyEstatico Contenido estático]
+ * [SesionesCherrypy Uso de sesiones]
