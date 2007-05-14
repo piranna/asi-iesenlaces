@@ -24,3 +24,4 @@ conf = { '/': {'tools.saticdir.root': directorio_actual},
        }
 cherrypy.quickstart(MiPrograma(), config=conf)
 }}}
+Se establece la correspondencia entre el directorio físico del servidor y el directorio que aparece en el html/xhtml.
