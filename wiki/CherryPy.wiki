@@ -6,6 +6,7 @@ Cherrypy (http://www.cherrypy.org/) es una librería para desarrollar aplicacion
 == Instalación ==
 Si no está instalado, ve a [CherryPy_Instalar Instalacion]
 
+
 == Hola, mundo == 
 Escribimos nuestro primer programa: una clase con un método index.html. Ese método tiene que ser accesible (*exposed*). {{{quickstart(HolaMundo())}}} publica una instancia de la clase {{{HolaMundo}}} y lanza el servidor web. Podremos parar el servidor con {{{Ctrl+C}}}:
 {{{
