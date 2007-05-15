@@ -4,8 +4,7 @@
 Cherrypy (http://www.cherrypy.org/) es una librería para desarrollar aplicaciones web con python, que no exige un conocimiento del protocolo http. Las aplicaciones web se desarrollan como el resto de programas orientados a objetos con python.
 
 == Instalación ==
-Si no está instalado, ve a [CherryPy_Instalar Instalacion]
-
+Si no está instalado, ve a CherryPy_Instalar e instálalo.
 
 == Hola, mundo == 
 Escribimos nuestro primer programa: una clase con un método index.html. Ese método tiene que ser accesible (*exposed*). {{{quickstart(HolaMundo())}}} publica una instancia de la clase {{{HolaMundo}}} y lanza el servidor web. Podremos parar el servidor con {{{Ctrl+C}}}:
