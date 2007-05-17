@@ -14,7 +14,7 @@ class Root:
 class XmlRpc(cherrypy._cptools.XMLRPCController):
      def suma(self, a, b):
          return a + b
-     add.exposed = True
+     suma.exposed = True
 
 root = Root()
 root.xmlrpc = XmlRpc()
