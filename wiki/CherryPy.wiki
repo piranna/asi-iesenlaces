@@ -57,3 +57,4 @@ cherrypy.quickstart(HolaMundo())
  * [CherrypyEstatico Contenido estático]
  * [SesionesCherrypy Uso de sesiones]
  * [http://asi-iesenlaces.googlecode.com/svn/trunk/cherrypy/ Fuentes y ejemplos de clase]
+ * [CherryPy_XmlRpc]
