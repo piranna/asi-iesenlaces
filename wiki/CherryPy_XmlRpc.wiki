@@ -45,3 +45,6 @@ rpc = xmlrpclib.ServerProxy("http://localhost:8080/xmlrpc")
 
 print rpc.suma(2,3)
 }}}
+
+
+Propuesta de ejercicios interesantes en http://www.cs.huji.ac.il/~sclass/exercises/ex3.html
