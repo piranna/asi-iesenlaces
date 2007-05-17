@@ -5,45 +5,38 @@
 
 *Servidor*
 {{{
-import sys, os.path
+# -*- coding: utf-8 -*-
 import cherrypy
+from cherrypy import _cptools
 
-class Root: 
-    pass
+class Root:
+    @cherrypy.expose
+    def index(slef):
+        return "Esto es una página web"
 
-class XmlRpc(cherrypy._cptools.XMLRPCController):
-     def suma(self, a, b):
-         return a + b
-     suma.exposed = True
+class MisFunciones(_cptools.XMLRPCController):
+    """Batería de funciones accesibles por xml-rpc"""
+    @cherrypy.expose
+    def mayusculas(self, mensaje):
+        return mensaje.upper()
+
+    @cherrypy.expose
+    def suma(self, x, y):
+        return x + y
+
 
 root = Root()
-root.xmlrpc = XmlRpc()
-
-cherrypy.tree.mount(root, config={'/': {
-     'request.dispatch': cherrypy.dispatch.XMLRPCDispatcher(),
-             }
-         }
-      )
-conf = os.path.join(os.path.dirname(__file__), 'ejemplos.conf')
-
-cherrypy.quickstart(root, config=conf)
+root.xmlrpc = MisFunciones()
+cherrypy.quickstart(root, '/')
 }}}
-
-*ejemplos.conf*
-{{{
-[global]
-server.socket_host = "127.0.0.1"
-server.socket_port = 8080
-server.thread_pool = 10
-}}}
-
 *Cliente*
 {{{
 import xmlrpclib
 
-rpc = xmlrpclib.ServerProxy("http://localhost:8080/xmlrpc")
+s = xmlrpclib.ServerProxy("http://localhost:8080/xmlrpc/")
 
-print rpc.suma(2,3)
+print s.suma(10, 15)
+print s.mayusculas('hola')
 }}}
 
 
