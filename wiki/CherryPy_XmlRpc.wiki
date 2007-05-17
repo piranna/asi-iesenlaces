@@ -1,0 +1,47 @@
+#summary xml-rpc con cherrypy
+#labels cherrypy,xml-rpc
+
+= XML-RPC =
+
+*Servidor*
+{{{
+import sys, os.path
+import cherrypy
+
+class Root: 
+    pass
+
+class XmlRpc(cherrypy._cptools.XMLRPCController):
+     def suma(self, a, b):
+         return a + b
+     add.exposed = True
+
+root = Root()
+root.xmlrpc = XmlRpc()
+
+cherrypy.tree.mount(root, config={'/': {
+     'request.dispatch': cherrypy.dispatch.XMLRPCDispatcher(),
+             }
+         }
+      )
+conf = os.path.join(os.path.dirname(__file__), 'ejemplos.conf')
+
+cherrypy.quickstart(root, config=conf)
+}}}
+
+*ejemplos.conf*
+{{{
+[global]
+server.socket_host = "127.0.0.1"
+server.socket_port = 8080
+server.thread_pool = 10
+}}}
+
+*Cliente*
+{{{
+import xmlrpclib
+
+rpc = xmlrpclib.ServerProxy("http://localhost:8080/xmlrpc")
+
+print rpc.suma(2,3)
+}}}
