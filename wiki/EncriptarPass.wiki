@@ -1,0 +1,22 @@
+#summary Encriptar contraseñas
+
+= Encriptar Contraseñas =
+
+*md5*
+{{{
+import md5
+clave = raw_input( "Introduzca la contraseña: " )
+print md5.new(clave).hexdigest()
+}}}
+
+*md5 con semilla*
+{{{
+import md5
+
+clave = "mibuenaclave"
+semilla = "1Ha7"
+hash = md5.new(semilla + clave).hexdigest()
+print "%s:%s" % (semilla, hash) # guardar esta cadena
+}}}
+
+
