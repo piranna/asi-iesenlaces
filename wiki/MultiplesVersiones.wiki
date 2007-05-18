@@ -10,8 +10,8 @@ $ easy_install -m Cherrypy
 
 Luego podemos usar en el código
 {{{
-pkg_resources.require("CherryPy")  # última versión instalada
+pkg_resources.require("CherryPy")         # última versión instalada
 pkg_resources.require("CherryPy==3.0.1")  # Esta versión exacta
 pkg_resources.require("CherryPy>=3.0.1")  # Esta versión o mayor
-pkg_resources.require("CherryPy<3")  # Menor que esta versión
+pkg_resources.require("CherryPy<3")       # Menor que esta versión
 }}}
