@@ -42,7 +42,7 @@ cherrypy.config.update('/path/del/archivo.conf')
 }}}
 
 == _cp_config ==
-También se puede usar el atributo {{{_cp_config}}} ç
+También se puede usar el atributo {{{_cp_config}}}
 
 {{{
 _cp_config = {'tools.gzip.on': True}
