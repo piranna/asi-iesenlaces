@@ -17,6 +17,7 @@ cherrypy.quickstart(MiPrograma(), config=conf)
 == Servir directorios completos ==
 *staticdir*
 {{{
+directorio_actual = os.path.abspath(os.path.dirname(__file__))
 conf = { '/': {'tools.saticdir.root': directorio_actual},
          '/css': {tools.staticdir.on': True, 
                   tools.staticdir.dir': os.path.join(directorio_actual, 'dir_css')
