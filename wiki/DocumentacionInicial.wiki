@@ -10,9 +10,10 @@
 
 
 *Presentaciones de clase*
- * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/inicio.html Presentación curso
+ * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/inicio.html Presentación curso]
  * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/programasSencillos.html Programas Sencillos]
 
 
+ 
  
  
