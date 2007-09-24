@@ -10,13 +10,9 @@
 
 
 *Presentaciones de clase*
- * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/inicio.html] Presentación curso
- * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/programasSencillos.html] Programas Sencillos
+ * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/inicio.html Presentación curso
+ * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/programasSencillos.html Programas Sencillos]
 
-<!--
-*Programación web*
- * [http://cafeina.ladybenko.net/wp-content/xhtml_tuto_beta.pdf Tutorial XHTML y CSS]
- * [http://www.mclibre.org/consultar/amaya/index.html Introducción xhtml y css - mclibre.org]
--->
 
+ 
  
