@@ -7,8 +7,16 @@
  * [http://marmota.act.uji.es/MTP/pdf/python.pdf Introducción a la Programación con Python. A. Marzal e I. Gracia. UJI]. Interesante la página de la [http://marmota.act.uji.es/MTP/teoria.shtml asignatura de programación].
  * [http://www.ibiblio.org/obp/thinkCSpy How to Think Like a Computer Scientist - Downey,  Elkner  & Meyers]
  * [http://www.diveintopython.org/ Inmersión en python]. En inglés (con traducciones). Para gente con experiencia en programación que quiera profundizar rápidamente en Python.
+
+
+*Presentaciones de clase*
+ * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/inicio.html] Presentación curso
+ * [http://platea.pntic.mec.es/~jmorilla/fprog/presentaciones/programasSencillos.html] Programas Sencillos
+
+<!--
 *Programación web*
  * [http://cafeina.ladybenko.net/wp-content/xhtml_tuto_beta.pdf Tutorial XHTML y CSS]
  * [http://www.mclibre.org/consultar/amaya/index.html Introducción xhtml y css - mclibre.org]
+-->
 
-
+ 
