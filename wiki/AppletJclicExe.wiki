@@ -1,0 +1,14 @@
+#applet jclic en exe
+== iDevice ==
+
+{{{
+<script 
+    language="JavaScript" src="http://clic.xtec.net/dist/jclic/jclicplugin.js" 
+    type="text/javascript">
+</script>
+
+<script language="JavaScript">
+   setJarBase('http://clic.xtec.net/dist/jclic');
+   writePlugin('http://clic.xtec.net/projects/geoclice/jclic/geoclice.jclic.zip', '800', '600');
+</script>
+}}}
