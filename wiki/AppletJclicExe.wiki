@@ -7,7 +7,7 @@
 *http://clic.xtec.net/dist/jclic/jclicplugin.js* es más completo que el *jclicplugin.js* que viene con la distribución de jclic.
 
 = iDevice =
-
+== java applet ==
 {{{
 <script 
     language="JavaScript" src="http://clic.xtec.net/dist/jclic/jclicplugin.js" 
@@ -19,3 +19,9 @@
    writePlugin('http://clic.xtec.net/projects/geoclice/jclic/geoclice.jclic.zip', '800', '600');
 </script>
 }}}
+
+== web externa ==
+{{{
+http://clic.xtec.net/db/jclicApplet.jsp?project=http://clic.xtec.net/projects/geoclice/jclic/geoclice.jclic.zip&lang=es
+}}}
+*problemas*: control de anchura y altura.
