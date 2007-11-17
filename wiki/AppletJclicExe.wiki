@@ -1,4 +1,5 @@
-# applet jclic en exe
+#summary applet jclic en exe.
+
 = Docs =
   * http://clic.xtec.net/es/documents/jclic_cd.htm Uso de jclicplugin
   * http://clic.xtec.net/es/jclic/faqjclic.htm#faq7
