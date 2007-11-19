@@ -20,8 +20,30 @@
 </script>
 }}}
 
-== web externa ==
+== web externa / add as a link ==
 {{{
 http://clic.xtec.net/db/jclicApplet.jsp?project=http://clic.xtec.net/projects/geoclice/jclic/geoclice.jclic.zip&lang=es
 }}}
+
+== pure xhtml applet (object tag) ==
+{{{
+<object classid="java:JClicApplet" 
+	type="application/x-java-applet;version=1.3"
+	archive="jclicapplet.jar,jclic.jar,activities.jar,utilities.jar,jclicxml.jar,jmfhandlers.jar,intl.jar,qt60.jar ,qt61.jar,soundspi.jar"
+	height="600" width="800" 
+	>
+  <param name="codebase" value="." />
+  <param name="activitypack" value="http://clic.xtec.net/projects/geoclice/jclic/geoclice.jclic.zip" />
+  <strong>
+    This browser does not have a Java Plug-in.
+    <br />
+    <a href="http://java.sun.com/products/plugin/downloads/index.html">
+      Get the latest Java Plug-in here.
+    </a>
+  </strong>
+</object>
+}}}
+
+
+
 *problemas*: control de anchura y altura.
