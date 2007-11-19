@@ -4,6 +4,8 @@
   * http://clic.xtec.net/es/documents/jclic_cd.htm Uso de jclicplugin
   * http://clic.xtec.net/es/jclic/faqjclic.htm#faq7
 
+  * http://senecux.wordpress.com/2007/04/12/jclic-con-exe-y-moodle/  Sobre la combinación eXe - moodle.
+
 *http://clic.xtec.net/dist/jclic/jclicplugin.js* es más completo que el *jclicplugin.js* que viene con la distribución de jclic.
 
 = iDevice =
