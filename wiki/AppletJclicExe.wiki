@@ -26,6 +26,9 @@ http://clic.xtec.net/db/jclicApplet.jsp?project=http://clic.xtec.net/projects/ge
 }}}
 
 == pure xhtml applet (object tag) ==
+
+_firefox only_
+
 {{{
 <object classid="java:JClicApplet" 
 	type="application/x-java-applet;version=1.3"
