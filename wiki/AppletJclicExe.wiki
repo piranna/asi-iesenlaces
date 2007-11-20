@@ -51,8 +51,8 @@ _firefox only_
 
 
 == applet con ficheros locales (local files) ==
-* Añadir (Con el botón agreagar archivos) los archivos de JClic: jclicapplet.jar,jclic.jar,activities.jar,utilities.jar,jclicxml.jar,jmfhandlers.jar,intl.jar,qt60.jar ,qt61.jar,soundspi.jar y el archivo del activity pack que queremos ejecutar.
+  * Añadir (Con el botón agreagar archivos) los archivos de JClic: jclicapplet.jar,jclic.jar,activities.jar,utilities.jar,jclicxml.jar,jmfhandlers.jar,intl.jar,qt60.jar ,qt61.jar,soundspi.jar y el archivo del activity pack que queremos ejecutar.
 
-* Modificar el applet para que lance el programa con un codebase local: <param name="codebase" value="." />
+  * Modificar el applet para que lance el programa con un codebase local: <param name="codebase" value="." />
 
 *problemas*: control de anchura y altura.
