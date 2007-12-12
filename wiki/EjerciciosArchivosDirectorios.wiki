@@ -2,6 +2,7 @@
 
 = Ejercicios con Archivos y directorios =
 
+  # Función que dado un directorio, muestre la lista de archivos del directorio ordenados por orden alfabético. Versión 2: por orden de creación.
   # Función que tiene como parámetro un directorio. Devuelve la lista de ficheros de ese directorio.
   # Función que dado un archivo devuelve el tiempo del último acceso.
   # Función que dado un archivo devuelve los segundos que han pasado desde el último acceso.
