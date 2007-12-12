@@ -10,4 +10,4 @@
 
 
 
-* Para trabajar con los tiempos, usa el módulo time. Para mostrar el tiempo, puedes tusar time.strftime. Ver http://docs.python.org/lib/module-time.html
+** Para trabajar con los tiempos, usa el módulo time. Para mostrar el tiempo, puedes tusar time.strftime. Ver http://docs.python.org/lib/module-time.html
