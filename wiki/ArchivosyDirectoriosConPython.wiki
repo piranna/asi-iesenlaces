@@ -65,9 +65,29 @@ shutil.copytree(raiz_de_directorio, copia_directorio)
 }}}
 
 == Manipulando los paths y nombres ==
+Rutas
 {{{
-os.path.basename(nombreFichero)
-os.path.dirname(nombreDir)
-# o
-nombreDir , nombreFichero = os.path.splitext(nombreFichero)
+>>> os.path.split('/home/alumno/python/ejercicios/ej1.py')
+('/home/alumno/python/ejercicios', 'ej1.py')
+>>> os.path.basename('/home/alumno/python/ejercicios/ej1.py')
+'ej1.py'
+>>> os.path.dirname('/home/alumno/python/ejercicios/ej1.py')
+'/home/alumno/python/ejercicios'
+}}}
+Extensiones
+{{{
+>>> os.path.splitext('pelicula.avi')
+('pelicula', '.avi')
+}}}
+
+== Crear y moverse entre directorios ==
+{{{
+directorioOriginal = os.getcwd()
+directorio = os.path.join(os.pardir, 'miNuevoDir')
+if not os.path.isdir(directorio):
+    os.mkdir(directorio)
+os.chdir(directorio)
+...
+os.chdir(directorioOriginal) # vuelve al directorio inicial
+os.chdir(os.environ['HOME']) # cambia al directorio home
 }}}
