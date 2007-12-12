@@ -7,3 +7,7 @@
   # Función que dado un archivo devuelve el tiempo del último acceso.
   # Función que dado un archivo devuelve los segundos que han pasado desde el último acceso.
   # Función que dados dos archivos devuelve -1 si el primero es más reciente 0 si son iguales y 1 si el segundo es más reciente.
+
+
+
+* Para trabajar con los tiempos, usa el módulo time. Para mostrar el tiempo, puedes tusar time.strftime. Ver http://docs.python.org/lib/module-time.html
