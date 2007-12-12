@@ -1,0 +1,29 @@
+#summary Archivos y directorios con Python.
+
+= Trabajando con archivos y directorios con Python =
+
+== Listado de archivos en un directorio ==
+
+Para buscar todos los archivos con una extensión, por ejemplo .jpg:
+{{{
+import glob
+lista = glob.glob("*.jpg")
+}}}
+Para listar todos los archivos de un directorio:
+{{{
+import os
+ficheros = os.listdir('/home/alumno/ejercicios/python') # linux
+ficheros = os.listdir(r'c:\Documents and Settings\alumno\Escritorio\ejercicios\python') #windows: cuidado con el caracter \
+}}}
+
+== Tipos de ficheros ==
+{{{
+print michero, 'es un', 
+if os.path.isfile(mifichero):
+    print 'fichero'
+if os.path.isdir(mifichero):
+    print 'directorio'
+if os.path.islink(mifichero):
+    print 'enlace'
+}}}
+
