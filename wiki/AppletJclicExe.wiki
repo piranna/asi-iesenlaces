@@ -58,6 +58,6 @@ _firefox only_
 *problemas*: control de anchura y altura.
 
 == Examples ==
-* [http://platea.pntic.mec.es/~jmorilla/moodle/exe_jclic.elp exe_jclic.elp]
-* [http://platea.pntic.mec.es/~jmorilla/moodle/jclic_scorm.zip jclics en scorm]
-* [http://moodle.ies-losenlaces.com/mod/scorm/view.php?id=777  dentro de moodle]
+  * [http://platea.pntic.mec.es/~jmorilla/moodle/exe_jclic.elp exe_jclic.elp]
+  * [http://platea.pntic.mec.es/~jmorilla/moodle/jclic_scorm.zip jclics en scorm]
+  * [http://moodle.ies-losenlaces.com/mod/scorm/view.php?id=777  dentro de moodle]
