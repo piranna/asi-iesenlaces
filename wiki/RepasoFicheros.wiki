@@ -1,0 +1,5 @@
+#summary Ejercicios de repaso del tema de ficheros en python
+
+= Repasando que es gerundio =
+
+Ejercicios de repaso de ficheros en python
