@@ -10,7 +10,7 @@ Ejercicios de repaso de ficheros en python
   # Función que concatenan los archivos {{{.txt}}} de un directorio en un nuevo fichero que se llama {{{total.txt}}}
   # Función que pone en minúsculas los nombres de archivos del directorio donde se ejecuta.
   # Función que {{{trocea(fichero, tam)}}} que crea archivos del tamaño indicado en tam. Por ejemplo si tenemos una arhivo grande {{{dvd.iso}}} de 4Gb y usuamos el programa {{{trocea(dvd.iso, 1024**3)}}} creará 4 archivos de 1Gb: {{{dvd.iso.1, dvd.iso.2, dvd.iso.3, dvd.iso.4}}} _Tip: hay que usar lectura y escritura en modo binario: *rb* y *wb*_
-  # 
+
 
 
 
