@@ -23,5 +23,5 @@ horas = {'fprog': 8,
 Crea un programa que dada esta estructura pida el nombre de un ciclo y muestre las asignaturas con su nombre completo y el número de horas entre paréntesis:
 {{{ 
 1ASI:     Fundamentos de programación  (8 horas semanales)
-              Redes de área local          (10 horas semanales)
+          Redes de área local          (10 horas semanales)
 }}}
