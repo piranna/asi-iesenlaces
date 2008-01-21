@@ -97,3 +97,29 @@ while True:
     punto = win.getMouse()
     t.setText("%d:%d" % (punto.getX(), punto.getY()))   
 }}}
+
+== Cuadrados sencillo ==
+{{{
+# -*- coding: cp1252 -*-
+from graphics import *
+import math
+win = GraphWin("Tres en raya")
+win.setCoords(0.0, 0.0, 3.0, 3.0)
+for x in range(3):
+    for y in range(3):
+        r = Rectangle(Point(x,y), Point(x+1, y+1))
+        r.setFill('red')
+        r.setOutline('white')
+        r.draw(win)
+        
+
+while True:
+    punto = win.getMouse()
+    x, y = punto.getX(), punto.getY()
+    x = math.floor(x)
+    y = math.floor(y)
+    r = Rectangle(Point(x,y), Point(x+1, y+1))
+    r.setFill('blue')
+    r.setOutline('white')
+    r.draw(win)
+}}}
