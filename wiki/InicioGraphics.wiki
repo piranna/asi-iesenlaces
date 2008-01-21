@@ -28,3 +28,44 @@ El objeto más sencillo es el punto:
 60
 >>> p.draw(win)
 }}}
+
+== Ejercicio clase ==
+{{{
+# -*- coding: cp1252 -*-
+from graphics import *
+import time
+win = GraphWin("Ventana de ejemplo", 400, 200)
+
+# objeto Point
+p = Point(50, 60) # coordenadas: x, y
+print p.getX()
+print p.getY()
+p.draw(win)
+p1 = Point( 300   , 180)
+p1.draw(win)
+
+# objeto Circle
+centro = Point(200,100)
+circulo = Circle(centro, 30)
+circulo.setFill('red')
+circulo.draw(win)
+
+# Textos
+etiqueta = Text(Point(200, 60), "Circulo rojo")
+etiqueta.draw(win)
+
+# Rectángulos
+rect = Rectangle(Point(5,5), Point(395,195))
+rect.draw(win)
+
+# líneas
+linea = Line(Point(5,5), Point(395,195))
+linea.draw(win)
+
+# ovalo
+oval = Oval(Point(10,10), Point(390, 190))
+oval.draw(win)
+
+time.sleep(10) # dejo 5 segundos abierta la ventana
+win.close()
+}}}
