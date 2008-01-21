@@ -1,0 +1,30 @@
+#summary Introducción a la POO con Graphics (Zelle)
+
+= Programación orientada a objetos =
+
+Un sistema complejo se construye con la interacción de objetos más sencillos.
+
+
+= Programación sencilla de Gráficos =
+
+ * Módulo: http://mcsp.wartburg.edu/zelle/python/graphics.py
+ * Documentación: http://mcsp.wartburg.edu/zelle/python/graphics/graphics/index.html
+
+== Instrucciones ==
+Crea una carpeta y descarga el archivo {{{graphics.py}}}.
+
+== Mi primer programa ==
+{{{
+from graphics import *
+win = GraphWin()
+}}}
+Por defecto crea una ventana de 200 pixels de alto x 200 pixels de ancho (40.000)
+El objeto más sencillo es el punto:
+{{{
+>>> p = Point(50, 60)
+>>> p.getX()
+50
+>>> p.getY()
+60
+>>> p.draw(win)
+}}}
