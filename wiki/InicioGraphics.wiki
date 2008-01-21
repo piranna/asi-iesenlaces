@@ -84,3 +84,16 @@ Line(Point(0,1), Point(3, 1)).draw(win)
 Line(Point(0,2), Point(3, 2)).draw(win)
 raw_input()
 }}}
+
+== Eventos ratón ==
+{{{
+# -*- coding: cp1252 -*-
+from graphics import *
+win = GraphWin("Ratón", 400, 400)
+t = Text(Point(200, 200), "")
+t.draw(win)
+
+while True:
+    punto = win.getMouse()
+    t.setText("%d:%d" % (punto.getX(), punto.getY()))   
+}}}
