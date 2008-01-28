@@ -11,6 +11,7 @@ Un sistema complejo se construye con la interacción de objetos más sencillos.
  * Documentación: http://mcsp.wartburg.edu/zelle/python/graphics/graphics/index.html
 
  * Más ejemplos en : http://asi-iesenlaces.googlecode.com/svn/trunk/0708/graphics/
+ * Documentación de Andrew N. Harrington: http://www.cs.luc.edu/~anh/python/hands-on/handsonHtml/handson.html#x1-830002.4
 
 == Instrucciones ==
 Crea una carpeta y descarga el archivo {{{graphics.py}}}.
