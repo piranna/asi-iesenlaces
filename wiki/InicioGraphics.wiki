@@ -10,6 +10,8 @@ Un sistema complejo se construye con la interacción de objetos más sencillos.
  * Módulo: http://mcsp.wartburg.edu/zelle/python/graphics.py
  * Documentación: http://mcsp.wartburg.edu/zelle/python/graphics/graphics/index.html
 
+ * Más ejemplos en : http://asi-iesenlaces.googlecode.com/svn/trunk/0708/graphics/
+
 == Instrucciones ==
 Crea una carpeta y descarga el archivo {{{graphics.py}}}.
 
