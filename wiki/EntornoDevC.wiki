@@ -6,11 +6,11 @@
  * http://www.lcc.uma.es/~pedre/LP_DevC.htm
 
 == Opciones interesantes ==
-# Herramientas -> Opciones del compilador -> Configuración -> Linker -> Generar información de debug -> YES
-# Herramientas -> Opciones del entorno -> Principal: Activar Crear archivo de respaldo
-# Herramientas -> Opciones del editor -> Principal: Activar Resaltar llaves y parentesis concordantes.
-# Herramientas -> Opciones del editor -> Visualización: Activar Número de línea.
-# Herramientas -> Opciones del editor -> Sintaxis: Seleccionar en Pre-configuracicones: Classic
+ # Herramientas -> Opciones del compilador -> Configuración -> Linker -> Generar información de debug -> YES
+ # Herramientas -> Opciones del entorno -> Principal: Activar Crear archivo de respaldo
+ # Herramientas -> Opciones del editor -> Principal: Activar Resaltar llaves y parentesis concordantes.
+ # Herramientas -> Opciones del editor -> Visualización: Activar Número de línea.
+ # Herramientas -> Opciones del editor -> Sintaxis: Seleccionar en Pre-configuracicones: Classic
 
 == Código por defecto ==
 
@@ -46,3 +46,11 @@ int main()
 
 // Implementación de Procedimientos y Funciones
 }}}
+== Documentación en línea ==
+ *  Descargar el manual de la biblioteca estándar de C para Dev-C++ 5 (1,29 MB).
+ * Abrir el Manejador de Paquetes de Dev-C++ (Herramientas -> Package Manager).
+ * Pulsar Install y seleccionar GlibcHelp.DevPak
+ * Seleccionar Ayuda -> Configurar el Menú de ayuda
+      # Pulsar Añadir y seleccionar Libc.hlp (posiblemente en C:\Dev-Cpp\Help).
+      # Editar el texto del menú para que ponga "Manual de Ayuda de la biblioteca estándar de C"
+      # Activar Busca en el archivo...
