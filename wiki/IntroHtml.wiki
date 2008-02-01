@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+# summary One-sentence summary of this page.
 = Introducción html =
 
 En este link tienes un resumen sencillo de las etiquetas: http://www.ulpgc.es/otros/tutoriales/curso_html1/examples.htm
