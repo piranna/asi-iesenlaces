@@ -1,0 +1,48 @@
+#summary Configuracion del entorno Dev-C++
+
+= Introducción al entorno =
+
+== Documentación ==
+ * http://www.lcc.uma.es/~pedre/LP_DevC.htm
+
+== Opciones interesantes ==
+# Herramientas -> Opciones del compilador -> Configuración -> Linker -> Generar información de debug -> YES
+# Herramientas -> Opciones del entorno -> Principal: Activar Crear archivo de respaldo
+# Herramientas -> Opciones del editor -> Principal: Activar Resaltar llaves y parentesis concordantes.
+# Herramientas -> Opciones del editor -> Visualización: Activar Número de línea.
+# Herramientas -> Opciones del editor -> Sintaxis: Seleccionar en Pre-configuracicones: Classic
+
+== Código por defecto ==
+
+*Herramientas --> Opciones del editor --> Código --> Código por defecto*
+
+{{{
+/*----------------------------------------------------------------
+|  Autor:                                                         |
+|  Fecha:                               Versión: 1.0              |
+|-----------------------------------------------------------------|
+|  Descripción del Programa:                                      |
+|                                                                 |
+| ----------------------------------------------------------------*/
+
+// Incluir E/S y Librerías Standard
+#include <stdio.h>
+#include <stdlib.h>
+
+// Zona de Declaración de Constantes
+
+// Zona de Declaración de Tipos
+
+// Zona de Cabeceras de Procedimientos y Funciones
+
+// Programa Principal
+int main()
+{
+    // Zona de Declaración de Variables del Programa principal
+
+    system("Pause");    // Hacer una pausa
+    return 0;           // Valor de retorno al S.O.
+}
+
+// Implementación de Procedimientos y Funciones
+}}}
