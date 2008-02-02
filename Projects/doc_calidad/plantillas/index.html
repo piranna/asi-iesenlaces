@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>$title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="layout.css" type="text/css"/>
+  </head>
+  <body class="index">
+    <div id="contendor">
+      <div id="header">
+	<h1>Esquema de documentación</h1>
+	<h2>IES Los Enlaces</h2>
+      </div>
+
+      <div id="codigos">
+	<h2>Codigos de los documentos</h2>
+	<p>::&nbsp;
+	  <py:for each="cod in codigos">
+	    <span class="${cod[1]}">${cod[0]}[${cod[1]}]</span>&nbsp;::&nbsp;
+	  </py:for>
+	</p>
+      </div>
+
+      <div id="menu">
+	<h2>Índice</h2>
+	<ul>
+	  <py:for each="el in orden">
+	    <li class="normal"><a href="#$el">$el</a></li>
+	  </py:for>
+	</ul>
+	<ul>
+	  <li class="otros"><a href="Carpeta_doc_auxiliar">Otros Docs</a></li>
+	</ul>
+      </div> <!-- menu -->
+
+      <div id="datos">
+	<py:for each="el in orden">
+	  <table class="tabla">
+	    <tr><th colspan="3"><a name="$el" /><h2>$el</h2></th></tr>
+	    <tr><th>Documento</th><th>Enlace</th><th>Tipo</th></tr>
+	    <py:for each="doc in proc[el]">
+	      <tr class ="${doc.tipo}">
+		<td>${doc.nombre}</td>
+		<td><a href="${doc.ruta}">${doc.codigo}</a></td>
+		<td>${doc.tipo}</td>
+	      </tr>
+	    </py:for>
+	  </table>
+	</py:for>
+
+	
+      </div> <!-- datos -->
+    <div id="footer">
+      <hr />
+      <p class="legalese">© 2008 luismiguel m.</p>
+    </div> <!-- footer -->
+    </div> <!-- contenedor -->
+  </body>
+</html>
