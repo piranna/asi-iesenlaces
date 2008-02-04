@@ -8,6 +8,8 @@ Un sistema complejo se construye con la interacción de objetos más sencillos.
 = Programación sencilla de Gráficos =
 
  * Módulo: http://mcsp.wartburg.edu/zelle/python/graphics.py
+ * Módulo modifiado (para los ejemplos de Harrington) http://www.cs.luc.edu/~anh/python/hands-on/examples/graphics.py
+
  * Documentación: http://mcsp.wartburg.edu/zelle/python/graphics/graphics/index.html
 
  * Más ejemplos en : http://asi-iesenlaces.googlecode.com/svn/trunk/0708/graphics/
