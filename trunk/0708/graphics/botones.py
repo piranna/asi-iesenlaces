@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 '''
+$Id$
+
 Elige los colores de la casa con clics
 '''
 
