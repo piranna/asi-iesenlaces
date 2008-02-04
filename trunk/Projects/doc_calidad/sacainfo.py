@@ -64,11 +64,15 @@ def creaPagina(nombre='indice.html'):
     """ crea la página principal de documentacion
     """
     from genshi.template import TemplateLoader
+    codigos = [(u'Anexo', u'ANX'), (u'Doc. de referencia', u'DIR'), 
+               (u'Formato', u'F'), (u'Ficha de proceso', u'FP'), 
+               (u'Instrucción', u'I'), (u'Manual de Calidad', u'MC'), 
+               (u'Proc. General', u'PG')]
 
     loader = TemplateLoader(os.path.join(os.path.dirname(__file__), 'plantillas'))
     tmpl = loader.load('index.html')
     proc, orden = convierte()
-    print tmpl.generate(title=u'Documentación sistema de calidad', orden=orden, proc=proc).render('html', doctype='html')
+    print tmpl.generate(title=u'Documentación sistema de calidad', orden=orden, proc=proc, codigos=codigos).render('html', doctype='html')
     
 
 def dameRuta(base, nombre):
