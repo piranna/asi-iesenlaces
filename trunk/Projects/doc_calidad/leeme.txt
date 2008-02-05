@@ -1,0 +1,30 @@
+Aplicación para acceder al índice de documentos.
+================================================
+
+[documentación provisional]
+
+Punto de partida:
+-----------------
+Documentación en carpetas de archivos en un ordenador con windows xp
+Índice en archivo de hoja de cálculo excel
+Cada línea tiene el nombre del documento, su código y su tipo.
+Los documentos están agrupados por bloques.
+Las filas de bloques no tienen más que una celda.
+
+Proceso:
+--------
+- Conversión de excel a csv.
+- Proceso con python del fichero csv para sacar las tablas de documentos.
+- Las celdas válidas son la primera, la penúltima y la última
+- Generación del índice html a partir de csv. Uso de genshi para facilitar la generación.
+- Se crea un diccionario. Cada clave es un bloque. Cada bloque tiene una lista de diccionarios (nombre del doc, código y tipo)
+- Hoja css para el formato (layout.css)
+- Un par de imágenes para las listas (folder.gif y folder2.gif)
+
+Generar el index:
+----------------
+Para generar: python sacainfo.py > index.html
+
+
+
+

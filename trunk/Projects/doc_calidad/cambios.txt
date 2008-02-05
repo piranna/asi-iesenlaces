@@ -1,0 +1,7 @@
+5-02-08.
+Corrección del acento en Códigos
+Corrección del nombre del mapa de procesos en el servidor para que lo enlace ANX_00000.ppt.
+Cambio del código del Modelo de carta centro a "modelo carta".
+
+4-02-08. 
+Instalo la primera versión en www.calidad.enlaces
