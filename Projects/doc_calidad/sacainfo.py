@@ -92,14 +92,28 @@ def codigos():
         cods.append((l[0].decode('utf-8'), l[-1].decode('utf-8')))
     return cods
                     
-       
+
+def creaXml():
+    proc, orden = convierte()
+    docs = u'<docCalidad>\n'
+    listaDocs=[]
+    for el in orden:
+        for doc in proc[el]:
+            listaDocs.append(u'<doc \ntipo="%s" \nruta="%s" \nbloque="%s">\n%s\n</doc>' % (doc['tipo'], doc['ruta'],el, doc['nombre']))
+    docs = docs + u'\n'.join(listaDocs) + u'\n</docCalidad>'
+    open('calidad.xml', 'w').write(docs.encode('utf-8'))
+            
+            
+            
+
     
 
     
 if __name__ == '__main__':
     proc, orden = convierte()
     #creaDoc('uno.xml', proc[orden[0]])
-    creaPagina()
+    #creaPagina()
     #print proc 
     #print codigos()
+    creaXml()
 
