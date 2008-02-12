@@ -3,9 +3,29 @@
 from pprint import pprint
 import csv
 import os
+import amara
+from amara import binderytools
 
 BASE_DOCS = 'Docum_SGC_obligatoria'
 
+def convierteXml():
+    #rules = [binderytools.ws_strip_element_rule(u'/*')]
+    doc = amara.parse('calidad.xml') #, rules=rules)
+
+    proc = {}
+    for d in doc.docCalidad.doc:
+        if not proc.has_key(d.bloque):
+            proc[d.bloque] = []
+        proc[d.bloque].append({u'nombre':unicode(d), u'codigo':d.codigo, u'tipo':d.tipo, u'ruta':d.ruta})
+    orden = []
+    for d in doc.docCalidad.orden.item:
+        orden.append(unicode(d))
+    return proc, orden
+    
+        
+            
+            
+    
 def convierte():
   
     reader = csv.reader(open("esquema.csv", "rb"))
@@ -71,7 +91,7 @@ def creaPagina(nombre='indice.html'):
 
     loader = TemplateLoader(os.path.join(os.path.dirname(__file__), 'plantillas'))
     tmpl = loader.load('index.html')
-    proc, orden = convierte()
+    proc, orden = convierteXml()
     print tmpl.generate(title=u'Documentación sistema de calidad', orden=orden, proc=proc, codigos=codigos).render('html', doctype='html')
     
 
@@ -96,11 +116,17 @@ def codigos():
 def creaXml():
     proc, orden = convierte()
     docs = u'<docCalidad>\n'
+    xml_orden="<orden>"
+    for doc in orden:
+        xml_orden += "<item>%s</item>" % doc
+    xml_orden += '</orden>'
+    docs += xml_orden
+    
     listaDocs=[]
     for el in orden:
         for doc in proc[el]:
-            listaDocs.append(u'<doc \ntipo="%s" \nruta="%s" \nbloque="%s">\n%s\n</doc>' % (doc['tipo'], doc['ruta'],el, doc['nombre']))
-    docs = docs + u'\n'.join(listaDocs) + u'\n</docCalidad>'
+            listaDocs.append(u'<doc tipo="%s" ruta="%s" codigo="%s" bloque="%s">%s</doc>' % (doc['tipo'], doc['ruta'],doc['codigo'],el, doc['nombre']))
+    docs = docs + u''.join(listaDocs) + u'</docCalidad>'
     open('calidad.xml', 'w').write(docs.encode('utf-8'))
             
             
@@ -110,10 +136,11 @@ def creaXml():
 
     
 if __name__ == '__main__':
-    proc, orden = convierte()
+    proc, orden = convierteXml()
     #creaDoc('uno.xml', proc[orden[0]])
-    #creaPagina()
-    #print proc 
+    creaPagina()
+    #print proc
+    #print orden
     #print codigos()
-    creaXml()
+    #creaXml()
 
