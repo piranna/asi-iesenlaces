@@ -1,0 +1,22 @@
+#summary Programación orientada a objetos en Python
+
+= Introducción =
+
+http://blog.rvburke.com/2006/11/22/programacion-orientada-a-objetos-en-python/
+
+
+== Ejercicios ==
+
+  # Crea una clase llamada Circulo que tenga como atributo el radio de tipo real y
+los siguientes métodos:
+    # calculaArea --> devuelve el área del círculo
+    # calculaPerimetro --> devuelve el perímetro del círculo
+
+  # Crea una clase Rectangulo que tenga las siguientes especificaciones:
+    * Atributos:
+      # Largo
+      # Ancho
+    * Métodos:
+      # calcular_area()
+      # setLargo()
+      # setAncho()
