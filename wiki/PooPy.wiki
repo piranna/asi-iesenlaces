@@ -9,7 +9,8 @@ http://blog.rvburke.com/2006/11/22/programacion-orientada-a-objetos-en-python/
 
   # Crea una clase llamada Circulo que tenga como atributo el radio de tipo real y los siguientes métodos:
     # calculaArea --> devuelve el área del círculo
-    # calculaPerimetro --> devuelve el perímetro del círculo
+    # calculaPerimetro --> devuelve el perímetro del círculo  
+    [http://moodle.ies-losenlaces.com/mod/wiki/view.php?id=707&page=view/ClaseCirculo&gid=0&uid=0#a456a6572636963696f20436c6173652043c3ad7263756c6f resuelto en clase]
   # Crea una clase Rectangulo que tenga las siguientes especificaciones:
     * Atributos:
       # Largo
