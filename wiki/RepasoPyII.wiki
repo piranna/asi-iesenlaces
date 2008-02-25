@@ -13,6 +13,7 @@
  * Crea una función '''salvaListaAFichero(lista, nombreFichero)''' que guarda la lista en un fichero de texto (un elemento de la lista en cada línea). Pruébala con tu función *multiplos(n,limite)*
  * Crea una funcion *leeDeFichero(nombreFichero, elemLinea=1)* que lea un fichero y lo muestre por pantalla. Mostrará en una línea el número de líneas indicado en *elemLinea*.
 == C ==
+ * Escribe un programa que pida un número al usuario y que imprima la frase "Le número x es par" o "impar" según el número introducido.
  * Escribe un programa que pida una frase al usuario (max. 50 letras) y que muestre la siguiente información:
    * Número de letras
    * Número de vocales
