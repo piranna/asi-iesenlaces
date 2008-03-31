@@ -13,4 +13,4 @@
 || mueve_humano(tablero, ficha) || Averigua el movimiento del jugador. Recibe el tablero y la ficha, devuelve el movimiento  ||
 || mueve_maquina(tablero, ficha_comp, ficha_jugador)  || Calcula el movimiento del ordenador. Devuelve ese movimiento ||
 || siguiente_turno(turno) || Cambia el turno. Recibe pieza, devuelve pieza ||
-|| felicita_ganador(ganador, ordenador || humano ||
+|| felicita_ganador(ganador, ordenador, humano || Felicita al ganador. Recibe la pieza ganadora, la del ordenador y la del humano ||
