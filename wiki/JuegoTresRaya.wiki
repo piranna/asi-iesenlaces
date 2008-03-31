@@ -1,0 +1,16 @@
+#summary Desglose de funciones para el juego del tres en raya
+
+= Funciones =
+
+||muestra_instrucciones() || Muestra en pantalla las instrucciones del juego||
+|| pregunta_si_no(pregunta) || Hace una pregunta, recibe la respuesta y devuelve *s* o *n* ||
+|| pregunta_numero(pregunta, bajo, alto) || Pide un número dentro de un rango. Devuelve el número introducido ||
+|| fichas() || Determina quién comienza. Devuelve la ficha del ordenador o del jugador. ||
+|| nuevo_tablero() || Crea un nuevo tablero vacío. Devuelve el tablero ||
+|| muestra_tablero(tablero) || Muestra en pantalla el tablero que recibe. ||
+|| movimientos_legales(tablero) || Devuelve los movimientos legales de un tablero ||
+|| ganador(tablero) || Determina el ganador. Recibe un tablero y devuelve la ficha ganadora, "empate" o Null ||
+|| mueve_humano(tablero, ficha) || Averigua el movimiento del jugador. Recibe el tablero y la ficha, devuelve el movimiento  ||
+|| mueve_maquina(tablero, ficha_comp, ficha_jugador)  || Calcula el movimiento del ordenador. Devuelve ese movimiento ||
+|| siguiente_turno(turno) || Cambia el turno. Recibe pieza, devuelve pieza ||
+|| felicita_ganador(ganador, ordenador || humano ||
