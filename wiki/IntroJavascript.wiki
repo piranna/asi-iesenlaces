@@ -12,6 +12,32 @@ Netscape envió el lenguaje a Ecma International: en 1997 nace Ecmascript.
 
 No tiene un concepto de entrada y salida y se diseñó para funcionar como lenguaje de script en un cliente. Hoy podemos encontrar js no sólo en los navegadores, sino también en  Adobe Acrobat, Photoshop, Yahoo!'s Widget engine y más. 
 
+== Dónde ==
+*En el encabezado*
+{{{
+<html>
+  <head>
+    <script type="text/javascript">
+       ...
+    </script>
+  </head>
+<body>
+</body>
+</html>
+}}}
+
+*En un fichero aparte*
+{{{
+<html>
+<body>
+  <script src="externo.js" type="text/JavaScript"></script>
+  <noscript>
+      Esto sólo se muestra si el navegador tiene javascript desactivado.
+  </noscript>
+</body>
+</html>
+}}}
+
 == Tipos de datos == 
 
 Los programas js manipulan valores y esos valores pertenecen a un tipo. Los tipos en js pueden ser: 
