@@ -8,7 +8,7 @@
 asi@ubuntu-12:~$ sudo nano /etc/apache2/mods-available/userdir.conf 
 }}}
 
-Añadimos al userdir.conf de apache estas lineas:
+Añadimos al '''userdir.conf''' de apache estas lineas:
 {{{
         <Directory /home/*/public_html/cgi-bin/> 
                 Options ExecCGI 
@@ -46,3 +46,6 @@ print "Content-type: text/html" ##Importante
 print
 print "<h1>Hola, mundo</h1>
 }}}
+=== Hacer ejecutable el archivo para apache ===
+{{{$ chmod +x test.py}}}
+El archivo tiene que tener permisos de lectura y ejecución para apache ({{{www-data}}}).
