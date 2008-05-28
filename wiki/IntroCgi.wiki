@@ -48,4 +48,5 @@ print "<h1>Hola, mundo</h1>
 }}}
 === Hacer ejecutable el archivo para apache ===
 {{{$ chmod +x test.py}}}
+
 El archivo tiene que tener permisos de lectura y ejecución para apache ({{{www-data}}}).
