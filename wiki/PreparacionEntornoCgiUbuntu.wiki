@@ -22,6 +22,7 @@ asi@ubuntu-12:~/public_html$ cd cgi-bin
 }}}
 
 == Instalamos Idle ==
+(para editar el código python)
 {{{
 asi@ubuntu-12:~/public_html/cgi-bin$ sudo aptitude install idle  // Instala Idle
 asi@ubuntu-12:~/public_html/cgi-bin$ idle // Abre la consola de Python
