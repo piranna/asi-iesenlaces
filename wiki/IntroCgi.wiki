@@ -2,7 +2,10 @@
 
 
 =¿Qué es un cgi?=
-[ Por hacer ]
+
+Common Gateway Interface (abreviado CGI) es una tecnología que permite a un cliente (explorador web) solicitar datos de un programa ejecutado en un servidor web. CGI especifica un estándar para transferir datos entre el cliente y el programa.
+[http://es.wikipedia.org/wiki/Common_Gateway_Interface]
+
 = Introducción =
 == Preparación del entorno ==
 PreparacionEntornoCgiUbuntu
